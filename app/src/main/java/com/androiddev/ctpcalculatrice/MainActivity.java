@@ -32,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
         final Button btnDivise = findViewById(R.id.buttonDivise);
         final Button btnEgal = findViewById(R.id.buttonEgal);
         final Button btnC = findViewById(R.id.buttonC);
+        final Button btnVirgule = findViewById(R.id.buttonV);
+        final Button btnDel = findViewById(R.id.buttonDel);
 
         btn0.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) { affichage.setText(affichage.getText()+"0"); }
@@ -76,10 +78,16 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) { affichage.setText(affichage.getText()+"/"); }
         });
         btnEgal.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) { affichage.setText(affichage.getText()+"="); }
+            public void onClick(View v) { affichage.setText(""); }
         });
         btnC.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) { affichage.setText(""); }
+        });
+        btnVirgule.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) { affichage.setText(affichage.getText()+","); }
+        });
+        btnDel.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) { affichage.setText(affichage.getText().toString().substring(0, affichage.getText().toString().length()-1)); }
         });
 
     }

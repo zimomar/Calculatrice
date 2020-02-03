@@ -5,21 +5,21 @@
     android:orientation="vertical"
     android:background="@android:color/black">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
 
         >
-    <TextView
-        android:id="@+id/operation"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:cursorVisible="false"
-        android:text="TEST"
-        android:textSize="20px"
-        android:background="@android:color/darker_gray"
-        />
+
+        <TextView
+            android:id="@+id/operation"
+            android:layout_width="fill_parent"
+            android:text=""
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:cursorVisible="false"
+            android:textSize="32dp" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
