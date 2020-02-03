@@ -15,7 +15,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:cursorVisible="false"
-        android:text="TEST"
+        android:text=""
         android:textSize="20px"
         android:background="@android:color/darker_gray"
         />

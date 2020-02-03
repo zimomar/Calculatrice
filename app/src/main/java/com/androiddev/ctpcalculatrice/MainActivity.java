@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         final Button btnMultiple = findViewById(R.id.buttonMultiple);
         final Button btnDivise = findViewById(R.id.buttonDivise);
         final Button btnEgal = findViewById(R.id.buttonEgal);
+        final Button btnC = findViewById(R.id.buttonC);
 
         btn0.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) { affichage.setText(affichage.getText()+"0"); }
@@ -67,7 +68,18 @@ public class MainActivity extends AppCompatActivity {
         btnMoins.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) { affichage.setText(affichage.getText()+"-"); }
         });
-
+        btnMultiple.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) { affichage.setText(affichage.getText()+"x"); }
+        });
+        btnDivise.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) { affichage.setText(affichage.getText()+"/"); }
+        });
+        btnEgal.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) { affichage.setText(affichage.getText()+"="); }
+        });
+        btnC.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) { affichage.setText(""); }
+        });
 
     }
 }
