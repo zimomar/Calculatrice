@@ -9,7 +9,6 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-
         >
     <TextView
         android:id="@+id/operation"
@@ -97,7 +96,7 @@
             android:background="#545657"/>
 
         <Button
-            android:id="@+id/buttonS"
+            android:id="@+id/buttonDivise"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -106,7 +105,7 @@
             android:background="#545657"/>
 
         <Button
-            android:id="@+id/buttonX"
+            android:id="@+id/buttonMultiple"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -148,7 +147,7 @@
             android:textColor="@android:color/white"/>
 
         <Button
-            android:id="@+id/buttonMultiplier"
+            android:id="@+id/buttonMoins"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -192,7 +191,7 @@
             android:textColor="@android:color/white"/>
 
         <Button
-            android:id="@+id/buttonMoins"
+            android:id="@+id/buttonPlus"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -275,7 +274,7 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/buttonEgal"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="500"
