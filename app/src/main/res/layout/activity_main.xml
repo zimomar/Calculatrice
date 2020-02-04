@@ -19,11 +19,13 @@
             android:layout_height="wrap_content"
             android:background="@android:color/darker_gray"
             android:cursorVisible="false"
-            android:textSize="32dp" />
+            android:textSize="30dp" />
         <TextView
+            android:id="@+id/resultat"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@android:color/darker_gray"/>
+            android:background="@android:color/darker_gray"
+            android:textSize="40dp"/>
 
     </LinearLayout>
 

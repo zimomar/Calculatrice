@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         final TextView affichage = findViewById(R.id.operation);
+        final TextView entree = findViewById(R.id.resultat);
 
         final Button btn0 = findViewById(R.id.button0);
         final Button btn1 = findViewById(R.id.button1);
@@ -36,52 +37,70 @@ public class MainActivity extends AppCompatActivity {
         final Button btnDel = findViewById(R.id.buttonDel);
 
         btn0.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) { affichage.setText(affichage.getText()+"0"); }
+            public void onClick(View v) { affichage.setText(affichage.getText()+"0");
+                entree.setText(affichage.getText()+"0");}
         });
         btn1.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) { affichage.setText(affichage.getText()+"1"); }
+            public void onClick(View v) { affichage.setText(affichage.getText()+"1");
+                entree.setText(affichage.getText()+"1");}
         });
         btn2.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) { affichage.setText(affichage.getText()+"2"); }
+            public void onClick(View v) { affichage.setText(affichage.getText()+"2");
+                entree.setText(affichage.getText()+"2");}
         });
         btn3.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) { affichage.setText(affichage.getText()+"3"); }
+            public void onClick(View v) { affichage.setText(affichage.getText()+"3");
+                entree.setText(affichage.getText()+"3");}
         });
         btn4.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) { affichage.setText(affichage.getText()+"4"); }
+            public void onClick(View v) { affichage.setText(affichage.getText()+"4");
+                entree.setText(affichage.getText()+"4");}
         });
         btn5.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) { affichage.setText(affichage.getText()+"5"); }
+            public void onClick(View v) { affichage.setText(affichage.getText()+"5");
+                entree.setText(affichage.getText()+"5");}
         });
         btn6.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) { affichage.setText(affichage.getText()+"6"); }
+            public void onClick(View v) { affichage.setText(affichage.getText()+"6");
+                entree.setText(affichage.getText()+"6");}
         });
         btn7.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) { affichage.setText(affichage.getText()+"7"); }
+            public void onClick(View v) { affichage.setText(affichage.getText()+"7");
+                entree.setText(affichage.getText()+"7");}
         });
         btn8.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) { affichage.setText(affichage.getText()+"8"); }
+            public void onClick(View v) { affichage.setText(affichage.getText()+"8");
+                entree.setText(affichage.getText()+"8");}
         });
         btn9.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) { affichage.setText(affichage.getText()+"9"); }
+            public void onClick(View v) { affichage.setText(affichage.getText()+"9");
+                entree.setText(affichage.getText()+"9");}
         });
         btnPlus.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) { affichage.setText(affichage.getText()+"+"); }
+            public void onClick(View v) {
+                affichage.setText(affichage.getText()+"+");
+                entree.setText("");
+            }
         });
         btnMoins.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) { affichage.setText(affichage.getText()+"-"); }
+            public void onClick(View v) { affichage.setText(affichage.getText()+"-");
+                entree.setText("");}
         });
         btnMultiple.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) { affichage.setText(affichage.getText()+"x"); }
+            public void onClick(View v) { affichage.setText(affichage.getText()+"x");
+                entree.setText("");}
         });
         btnDivise.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) { affichage.setText(affichage.getText()+"/"); }
+            public void onClick(View v) { affichage.setText(affichage.getText()+"/");
+                entree.setText("");}
         });
         btnEgal.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) { affichage.setText(""); }
+            public void onClick(View v) { affichage.setText("");
+                entree.setText("");}
         });
         btnC.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) { affichage.setText(""); }
+            public void onClick(View v) { affichage.setText("");
+                entree.setText("");}
         });
         btnVirgule.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) { affichage.setText(affichage.getText()+","); }
